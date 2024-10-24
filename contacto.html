@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cuenta</title>
+</head>
+<body>
+    <header>
+        <div >
+            <a href="index.html"><img src="./img/logo.png" alt="logo" width="150px"></a>
+        </div>
+        <nav class="flexItem">  
+                <ul> 
+                    <li><a href="index.html" alt="Inicio" >inicio</a></li>
+                    <li><a href="productos.html" alt="Productos">productos</a></li>
+                    <li><a href="contacto.html" alt="contacto">contacto</a></li>
+                    <li><a href="carrito.html" alt="Carrito"><img src="./img/carrito.png" alt="carrito" width="30px"></a></li>      
+                </ul>
+        </nav>
+    </header>
+    <main >
+        <div id="mainContacto">
+            <section>
+                <h1>Contactanos:</h1>
+                <ul>
+                    <li>
+                        <a href="mailto:atiamultimarca@gmail.com">atiamultimarca@gmail.com</a>
+                    </li>
+                </ul>
+           </section> 
+            <section> 
+                <form action="https://formspree.io/f/mnnqazpw" method="post"> <!--  tipo de acción (enviar a un mail o procesar su contenido con un script o indicar la URL a donde irá)/method:
+                        post(para ser enviado).-->
+                        <div class="formGrup"> 
+                            <label for="nombre" >Nombre:</label><!--: Se utiliza para etiquetar un campo del formulario-->
+                            <input type="text" id="name" name="name" required><!-- los input son campo de entrada de datos/type, tipo de dato-->
+                        </div>
+                        <div class="formGrup">
+                            <label for="email" >Email:</label>
+                            <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="formGrup"> 
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="formGrup">
+                            <label for="texto">Mensaje:</label>
+                            <textarea name="mensaje" id="mensaje" rows="7" ></textarea><!--Campo para ingresar texto en múltiples líneas.-->
+                    </div>
+                    <div class="formGrup"> 
+                            <button type="submit" value="enviar" class="buttonContacto">enviar</button>
+                            <button type="reset" value="borrar" class="buttonContacto">borrar</button>
+                    </div>
+                </form>
+            </section>
+            <section>
+                    <h2>Nos encontramos aqui:</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13075.605984232072!2d-58.6846042!3d-34.984132!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1727813873844!5m2!1ses!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div id="containerFooter">
+            <div>
+                <span class="subtitulo">Seguinos en:</span>
+                <div id="redes">
+                   <a href=""><img src="./img/ig.png" alt="instagram"></a>
+                   <a href=""><img src="./img/fc.png" alt="facebook" ></a>
+                </div>   
+            </div>
+            <div id="menu">
+                <span class="subtitulo">Menu:</span>
+                <ul>
+                    <li><a href="index.html" alt="Inicio" >inicio</a></li>
+                    <li><a href="productos.html" alt="Productos">productos</a></li>
+                    <li><a href="contacto.html" alt="contacto">contacto</a></li>
+                    <li><a href="carrito.html" alt="Carrito">carrito</a></li> 
+                </ul>
+            </div>
+                <div>
+                    <span class="subtitulo" >Contactanos:</span>
+                    <a href="mailto:atiamultimarca@gmail.com">atiamultimarca@gmail.com</a>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>

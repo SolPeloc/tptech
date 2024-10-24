@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ 
+}
+body{
+font-family: "Roboto", sans-serif;
+font-size: 16px;
+ color:#3a4a5a;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.flexItem:nth-child(2){
+    flex-grow: 2;
+}
+/* .navbar{
+    display: inline-flex;
+    flex-direction: row;
+ }  */
+ 
+ nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ nav li{
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+ }
+
+
+
+ul,li,a{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: #3a4a5a;
+}
+
+/* ESTILOS FOOTER*/
+footer{
+    padding-top: 40px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#containerFooter{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.subtitulo{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#redes {
+  margin-block: 10px;
+  
+}
+ #redes a img {
+    padding: 10px;
+    width: 50px;
+    transition: all 500ms;
+ }
+ #redes a img:hover{
+  transform: scale(1.2);
+ }
+ #menu ul li{
+    padding: 10px;
+    text-align: center;
+ }
+
+
+/* ESTILOS CONTACTO*/
+#mainContacto{
+    width: 100%;
+    margin: 15px;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+   flex-wrap: wrap; 
+    padding-block: 10px;
+}
+#mainContacto section{
+    margin: 15px;
+    padding: 15px;
+}
+
+
+ section form{
+    width: 400px;
+    margin-left: 30px;
+    /* display: inline-block;
+    justify-content: center;
+    box-sizing: inherit; */
+   /* flex-basis: 50%; */
+}
+.formGrup{
+  position: relative;
+  width: 100%;
+  float: left; 
+  margin-left: 20px;
+}
+label{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+textarea,
+input{
+    padding: 10px;
+    width: 80%;
+    resize: none;
+    
+}
+.buttonContacto{
+    background: #554f5f;
+    border: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+  
+}
