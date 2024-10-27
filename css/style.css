@@ -11,6 +11,7 @@ body{
 font-family: "Roboto", sans-serif;
 font-size: 16px;
  color:#3a4a5a;
+
 }
 
 header{
@@ -49,9 +50,98 @@ ul,li,a{
     cursor: pointer;
     color: #3a4a5a;
 }
+/*ESTILOS MAIN principal*/
+#mainPrincipal{
+   min-height: 100vh; /**/
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: 40px;
 
+    }
+    
+    #mainPrincipal section { 
+        min-width:450px;/**/
+        box-sizing: content-box;
+        width: 100%;
+        overflow: hidden;/**/
+        
+    }
+    #mainPrincipal section img{
+        object-fit: cover;/*ver*/
+        height: auto;/*ver*/
+    }
+  .containerCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%; /**/
+    height: auto;/**/
+    box-sizing: content-box; /**/
+   /**/
+  }
+ /*reutilizable*/
+  .subtitulo h2{
+    text-align: center;
+    margin: 15px;
+  }
+   .card{
+    min-height: 400px;
+    width: 300px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, .125);
+    margin: 20px 20px;/**/
+    padding: 10px;
+    
+    transition: all 400ms ease;
+   }
+   .card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.2);
+ 
+   /*overflow: hidden;*/
+   }
+   .card img{
+    flex-grow: 1;/**/
+    flex-shrink: 1;/**/
+   }
+   .btn{
+    color:white;
+    background-color: #242129;
+    border-radius: 4px;
+    padding: 10px;
+    display: inline-block;
+    
+   }
+    
+   .btnMain {
+    margin: 20px;
+    display:flex;
+    justify-content: center;
+   }
+
+   /* ESTILOS PRODUCTOS*/
+   #containerProductos{
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+  /* #containerCard  .card{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+   }*/
 /* ESTILOS FOOTER*/
 footer{
+    position: absolute;
+    min-width: 300px; /**/
     padding-top: 40px;
     margin-top: 20px;
     width: 100%;
@@ -86,6 +176,7 @@ footer{
  }
 
 
+
 /* ESTILOS CONTACTO*/
 #mainContacto{
     width: 100%;
@@ -96,12 +187,11 @@ footer{
    flex-wrap: wrap; 
     padding-block: 10px;
 }
+
 #mainContacto section{
     margin: 15px;
     padding: 15px;
 }
-
-
  section form{
     width: 400px;
     margin-left: 30px;
