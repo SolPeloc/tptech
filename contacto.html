@@ -6,17 +6,20 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Cuenta</title>
 </head>
-<body>
+<body id="bodyOscuro">
     <header>
         <div >
             <a href="index.html"><img src="./img/logo1.png" alt="logo" width="150px"></a>
         </div>
+        <div>
+            <button id="btnLuna"><img src="./img/luna.png" alt="" width="25px"></button>  <!-- ver funcionalidad modo oscuro-->
+        </div>
         <nav class="flexItem">  
                 <ul> 
-                    <li><a href="index.html" alt="Inicio" >inicio</a></li>
-                    <li><a href="productos.html" alt="Productos">productos</a></li>
-                    <li><a href="contacto.html" alt="contacto">contacto</a></li>
-                    <li><a href="carrito.html" alt="Carrito"><img src="./img/carrito.png" alt="carrito" width="30px"></a></li>      
+                    <li><a href="index.html" alt="Inicio" target="_blank">inicio</a></li>
+                    <li><a href="productos.html" alt="Productos" target="_blank">productos</a></li>
+                    <li><a href="contacto.html" alt="contacto" target="_blank">contacto</a></li>
+                    <li><a href="#" alt="Carrito"><img src="./img/carrito.png" alt="carrito" width="30px"></a></li>      
                 </ul>
         </nav>
     </header>
@@ -29,9 +32,17 @@
                         <a href="mailto:atiamultimarca@gmail.com">atiamultimarca@gmail.com</a>
                     </li>
                 </ul>
-           </section> 
-            <section> 
-                <form action="https://formspree.io/f/mnnqazpw" method="post"> <!--  tipo de acción (enviar a un mail o procesar su contenido con un script o indicar la URL a donde irá)/method:
+           </section >
+           <section id="modal" class="mainModal"> <!-- modal ver-->
+                <div class="contenidoModal">
+                    <p id="recibido"></p>
+                      <button class="cerrar">cerrar</button> 
+                </div>
+           </section>
+                      <!-- Contenedor para el mensaje de error -->
+           <p id="mensajeError" style="color: red; display: none;">Por favor, completa todos los campos</p>
+            <section> <!--action="https://formspree.io/f/mnnqazpw" method="post"-->
+                <form> <!--  tipo de acción (enviar a un mail o procesar su contenido con un script o indicar la URL a donde irá)/method:
                         post(para ser enviado).-->
                         <div class="formGrup"> 
                             <label for="nombre" >Nombre:</label><!--: Se utiliza para etiquetar un campo del formulario-->
@@ -50,13 +61,13 @@
                             <textarea name="mensaje" id="mensaje" rows="7" ></textarea><!--Campo para ingresar texto en múltiples líneas.-->
                     </div>
                     <div class="formGrup"> 
-                            <button type="submit" value="enviar" class="buttonContacto">enviar</button>
-                            <button type="reset" value="borrar" class="buttonContacto">borrar</button>
+                            <button  id= "btnDatos"type="submit" value="enviar" class="buttonContacto">enviar</button>
+                            <button type="reset" value="borrar" class="buttonContacto" id="btnBorrar">borrar</button>
                     </div>
                 </form>
             </section>
             <section>
-                    <h2>Nos encontramos aqui:</h2>
+                    <h2 id="blancoh2">Nos encontramos aqui:</h2>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13075.605984232072!2d-58.6846042!3d-34.984132!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1727813873844!5m2!1ses!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </div>
@@ -74,10 +85,9 @@
             <div id="menu">
                 <span class="subtitulo">Menu:</span>
                 <ul>
-                    <li><a href="index.html" alt="Inicio" >inicio</a></li>
-                    <li><a href="productos.html" alt="Productos">productos</a></li>
-                    <li><a href="contacto.html" alt="contacto">contacto</a></li>
-                    <li><a href="carrito.html" alt="Carrito">carrito</a></li> 
+                    <li><a href="index.html" alt="Inicio" target="_blank">inicio</a></li>
+                    <li><a href="productos.html" alt="Productos" target="_blank">productos</a></li>
+                    <li><a href="contacto.html" alt="contacto" target="_blank">contacto</a></li>
                 </ul>
             </div>
                 <div>
@@ -86,5 +96,7 @@
                 </div>
         </div>
     </footer>
+    <script src="./js/principal.js"></script>
+    <script src="./js/contacto.js"></script>
 </body>
 </html>

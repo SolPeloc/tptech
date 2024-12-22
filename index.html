@@ -6,17 +6,20 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Atia multimarca</title>
 </head>
-<body>
-    <header>
-        <div >
+<body id="bodyOscuro">
+    <header >
+        <div>
             <a href="index.html"><img src="./img/logo1.png" alt="logo" width="150px"></a>
         </div>
-        <nav class="flexItem">  
+        <div>
+            <button id="btnLuna" class="btnLunaStyle "><img src="./img/luna.png" alt="" width="25px"></button>  <!-- ver funcionalidad modo oscuro-->
+        </div>
+        <nav class="flexItem" >  
                 <ul> 
-                    <li><a href="index.html" alt="Inicio" >inicio</a></li>
-                    <li><a href="productos.html" alt="Productos">productos</a></li>
-                    <li><a href="contacto.html" alt="contacto">contacto</a></li>
-                    <li><a href="carrito.html" alt="Carrito"><img src="./img/carrito.png" alt="carrito" width="30px"></a></li>      
+                    <li><a href="index.html" alt="Inicio" id="aOscuro">inicio</a></li>
+                    <li><a href="productos.html" alt="Productos" target="_blank">productos</a></li>
+                    <li><a href="contacto.html" alt="contacto" target="_blank"id="aOscuro">contacto</a></li>
+                    <li><a href="#" alt="Carrito"><img src="./img/carrito.png" alt="carrito" width="30px"></a></li>      
                 </ul>
         </nav>
     </header>
@@ -28,7 +31,7 @@
             <div class="subtitulo">
                 <h2> DESTACADAS :)</h2>
             </div>
-            <div class="containerCards"> 
+            <div class="containerCards" id="productosDestacados"> 
                 <div class="card">
                         <h2>Remera Rose</h2>
                         <img src="img/remeralisa2.jpg" alt="" width="100%"> 
@@ -44,11 +47,6 @@
                         <img src="img/remeraestampada5.jpg" alt="" width="100%">
                         <a href="./productos.html#remeraestampada5" class="btn">quiero</a>
                 </div>
-              <!--   <div class="card">
-                    <h2>Remera margarita</h2>
-                        <img src="img/remera.jpg" alt="" width="100%">
-                        <a href="./productos.html" class="btn">quiero</a>
-                </div>-->
           </div>
          </section>
          <section id="sectionInformativo">
@@ -63,7 +61,7 @@
             
         </section>
         <div class="btnMain"> 
-            <a href="./productos.html" class="btn">Ver mas</a>
+            <a href="./productos.html" class="btn" target="_blank">Ver mas</a>
         </div>
     </main>
     <hr>
@@ -79,10 +77,9 @@
                 <div id="menu">
                     <span class="subtitulo">Menu:</span>
                     <ul>
-                        <li><a href="index.html" alt="Inicio" >inicio</a></li>
-                        <li><a href="productos.html" alt="Productos">productos</a></li>
-                        <li><a href="contacto.html" alt="contacto">contacto</a></li>
-                        <li><a href="carrito.html" alt="Carrito">carrito</a></li> 
+                        <li><a href="index.html" alt="Inicio" target="_blank">inicio</a></li>
+                        <li><a href="productos.html" alt="Productos" target="_blank">productos</a></li>
+                        <li><a href="contacto.html" alt="contacto" target="_blank">contacto</a></li>
                     </ul>
                 </div>
                     <div>
@@ -91,5 +88,6 @@
                     </div>
       </div>
     </footer>
+    <script src="/js/principal.js"></script>
 </body>
 </html>

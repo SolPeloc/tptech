@@ -7,9 +7,13 @@
  -HTML
  -CSS
  -GOOGLE FONTS
+ -JAVASCRIPT
  
  # Deploy:
  (https://solpeloc.github.io/tptech/)
 
  # Autora:
  Soledad Peloc
+
+
+
